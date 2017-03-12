@@ -23,7 +23,7 @@ module.exports = {
 	// Events are considered "happening" for a margin of time, where users can see that the event
 	// is happening right now. During that time, the event is not considered expired yet.+
 	// This config determines for how long.
-	happening_margin: 60000 * 5, // In milliseconds
+	happening_margin: 60000 * 120, // In milliseconds
 
 	// Update interval
 	// Every X milliseconds, ScheduleBot will update all active summaries.
@@ -40,7 +40,7 @@ module.exports = {
 	// More info: https://discordapp.com/developers/docs/topics/permissions
 	delete_after_reply: {
 		enabled: true,
-		time: 60000, // In milliseconds
+		time: 10000, // In milliseconds
 	},
 
 	// If true, it will delete any message that is not a command from the master channel.
